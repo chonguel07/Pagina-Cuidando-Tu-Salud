@@ -71,6 +71,12 @@ hr {
   overflow: visible;
 }
 
+.titulo-tratamiento {
+  font-size: 40px;     /* Tamaño del texto */
+  font-weight: 550;    /* Grosor: de 100 a 900, mientras más alto más grueso */
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -12144,12 +12150,17 @@ textarea.form-control {
 
 .panel {
   margin-bottom: 20px;
-  background-color: #fff;
+  background-color: #dedddd; /* gris muy claro */
+
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
+.panel:hover {
+  background-color: #d0cfcf; /* un poco más oscuro al hacer hover */
+}
+
 .panel-body {
   padding: 15px;
 }

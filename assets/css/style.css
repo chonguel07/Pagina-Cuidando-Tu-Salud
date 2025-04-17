@@ -95,7 +95,7 @@ iframe {
 }
 
 .panel-default>.panel-heading {
-  background-color: transparent;
+  background-color: #f0f2f5; /* gris muy claro */
   border: medium none;
   color: #333;
 }
@@ -112,6 +112,8 @@ iframe {
 
 .panel-body {
   padding: 15px 15px 0px 50px;
+  
+  
 }
 
 .faq-details h4.check-title {
@@ -385,20 +387,87 @@ iframe {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
+
+  border: 4px solid rgb(255, 255, 255); /* Marco blanco suave */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Sombra sutil */
+  transition: transform 0.3s ease;
+
 }
+
+.img-res:hover {
+  transform: scale(1.03); /* Efecto de zoom suave al pasar el mouse */
+}
+
+.panel-body p{
+  color: #000000;
+  font-size: 18px;          /* tamaño de letra */
+  font-weight: 500;         /* grosor: 400 es normal, 500 un poco más fuerte, 600+ más grueso */
+  line-height: 1.4;         /* espaciado entre líneas para mejor lectura */
+}
+
 
 .portfolio {
   margin-top: 50px;
 }
 
+.portfolio-sorting a {
+  
+  border: 2px solid transparent;
+  border-radius: 10px;
+
+  min-width: 160px; /* Ajustá según se necesite */
+
+  width: fit-content;         /* se ajusta al contenido */
+  margin: 8px auto;           /* centrado horizontal y espacio vertical */
+  padding: 8px 16px;          /* espacio interno */
+  text-align: center;
+  display: block;             /* para que margin auto funcione */
+
+    font-size: clamp(16px, 4vw, 20px); /* tamaño de fuente adaptable */
+
+
+}
+
+
 .portfolio-sorting {
   margin: 0;
-  border-left:1px solid #C3C5C6;
-  border-top: 1px solid #C3C5C6;
-  border-right: 1px solid #C3C5C6;
-  border-bottom: 1px solid #C3C5C6;
-  height: 47px;
+  border: 3px solid #C3C5C6;
+
+  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px; /* Espacio entre botones */
+  padding-top: 8px; /* <--- agrega espacio arriba */
+  padding-bottom: 8px;
+
+  margin: 0 auto; /* Centra el contenedor */
+  max-width: 80%; /* Hace que no ocupe el 100% del ancho */
+
+  white-space: nowrap;  /* No permite saltos de línea */
+
+  
 }
+.portfolio-sorting a:visited {
+    color: #ffffff !important; /* O el color que prefieras */
+    
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio-sorting {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .portfolio-sorting a {
+    font-size: clamp(12px, 4vw, 14px) !important;
+    width: 100%;
+    max-width: 250px;
+    transform: translateX(30%); /* Mueve el botón 10px a la derecha */
+  }
+}
+
 
 .portfolio-sorting li {
   padding: 0;
@@ -406,13 +475,12 @@ iframe {
 }
 
 .portfolio-sorting li a {
-  position: relative;
+
   display: inline-block;
   padding: 0 30px;
   line-height: 44px;
   height: 44px;
-  border-left: 1px solid #f6f6f6;
-  border-right: 1px solid #f6f6f6;
+ 
   text-transform: uppercase;
 }
 
@@ -473,6 +541,7 @@ iframe {
 
 .portfolio-item {
   overflow: hidden;
+  margin: 2px;
 }
 
 .portfolio-item .portfolio-item-thumb {
@@ -480,7 +549,11 @@ iframe {
   height: 250px;
 }
 
-
+.portfolio-item-thumb {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px; /* Curva overlay azul*/
+}
 
 
 .portfolio-item .portfolio-item-thumb:after {

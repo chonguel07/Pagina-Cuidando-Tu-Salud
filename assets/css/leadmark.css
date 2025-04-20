@@ -74,8 +74,13 @@ hr {
 .titulo-tratamiento {
   font-size: 40px;     /* Tamaño del texto */
   font-weight: 550;    /* Grosor: de 100 a 900, mientras más alto más grueso */
+
+  text-align: center;
 }
 
+.trata{
+  scroll-margin-top: 150px; /* o el alto de tu navbar */
+}
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -11537,6 +11542,7 @@ textarea.form-control {
 
 .section {
   padding: 80px 0;
+  scroll-margin-top: 80px;
 }
 
 .section:nth-child(even) {
@@ -11574,6 +11580,8 @@ textarea.form-control {
   font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
   padding-bottom: 7px;
   font-weight: 600;
+
+  text-align: center;
 }
 
 .section .components-section-title {

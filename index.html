@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,10 @@
 	
 	 <!-- icon pestana  -->
 	<link rel="icon" href="assets/imgs/loga.png">
-	
+
+    
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <!-- style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     
@@ -26,13 +29,16 @@
     
 	<meta property="og:image:width" content="600" />
 	<meta property="og:image:height" content="600" />	
+
 	<style>
     body {
         background-image: url('assets/imgs/podologofin.png');
         background-position: center;
-        
+       
     }
 </style>
+
+
 
 
 
@@ -60,8 +66,12 @@
                         <a class="nav-link" href="#tratamiento">Tratamiento</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#producto">Nuestros Productos</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#especialistas">Especialistas</a>
                     </li>
+                   
                     <li class="nav-item">
                         <a class="nav-link" href="#contacto">Contactanos</a>
                     </li>
@@ -123,7 +133,7 @@
     <!-- Fin Section -->
 
     <!-- Tratamiento Section -->
-    <section id="tratamiento">
+    <section class="trata" id="tratamiento">
                 <div class="container">
               <br>
                 <h2 class="titulo-tratamiento">Tratamientos</h2>
@@ -133,7 +143,7 @@
                     	<li><a href="#" class="active" data-group="all">Todos</a></li>
                         <li><a href="#" class="" data-group="podologia">Podología</a></li>
                         <li><a href="#" class="" data-group="terapia">terapias holísticas</a></li>
-                        <li><a href="#" class="" data-group="natural">Naturista</a></li>
+                        <li><a href="#" class="" data-group="natural">Nutricion</a></li>
                         
                     </ul><!-- /.portfolio-sorting  -->
 
@@ -199,6 +209,76 @@
                                 </div><!-- /.portfolio-info  -->
                             </div>
                         </div><!-- /.col-md-3  -->
+
+                         <!-- Portfolio item -->
+                         <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["podologia"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="assets/imgs/pieatleta.png" alt="" class="img-res">
+                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem11">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>Pie de Atleta</h3>
+                                    <p>Podología</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+
+                         <!-- Portfolio item -->
+                         <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["podologia"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="assets/imgs/hongopie.png" alt="" class="img-res">
+                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem12">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>Hongo en los pies</h3>
+                                    <p>Podología</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+
+                         <!-- Portfolio item -->
+                         <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["podologia"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="assets/imgs/pieplano.png" alt="" class="img-res">
+                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem13">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>Pie Plano</h3>
+                                    <p>Podología</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+
+                        <!-- Portfolio item -->
+                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["podologia"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="assets/imgs/piegarra.png" alt="" class="img-res">
+                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem14">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>Dedos en Garra</h3>
+                                    <p>Podología</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+
+
+
+
+
+
                         
                         <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["terapia"]'>
                             <div class="portfolio-item">
@@ -259,8 +339,60 @@
                                 </div><!-- /.portfolio-info  -->
                             </div>
                         </div><!-- /.col-md-3  -->
+                        
                         <!-- Portfolio item -->
+                    <!--     <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["terapia"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="assets/imgs/fitote1.jpg" alt="" class="img-res">
+                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem9">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h3>Fitoterapia</h3>
+                                    <p>Terapias Holísticas</p>
+                                </div>
+                            </div>
+                        </div> -->
+
+                          <!-- Portfolio item -->
+                          <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["terapia"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="assets/imgs/masoterapia.png" alt="" class="img-res">
+                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem15">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>Masoterapia</h3>
+                                    <p>Terapias Holísticas</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+
                         <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["terapia"]'>
+                            <div class="portfolio-item">
+                                <div class="portfolio-item-thumb">
+                                    <img src="assets/imgs/electroterapia.png" alt="" class="img-res">
+                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem16">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </div><!-- /.portfolio-item-thumb  -->
+                                <div class="portfolio-info">
+                                    <h3>Electroterapia</h3>
+                                    <p>Terapias Holísticas</p>
+                                </div><!-- /.portfolio-info  -->
+                            </div>
+                        </div><!-- /.col-md-3  -->
+
+                      
+
+
+
+                         <!-- Portfolio item -->
+                         <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["natural"]'>
                             <div class="portfolio-item">
                                 <div class="portfolio-item-thumb">
                                     <img src="assets/imgs/fitote1.jpg" alt="" class="img-res">
@@ -270,11 +402,11 @@
                                 </div><!-- /.portfolio-item-thumb  -->
                                 <div class="portfolio-info">
                                     <h3>Fitoterapia</h3>
-                                    <p>Terapias Holísticas</p>
+                                    <p>Nutricion</p>
                                 </div><!-- /.portfolio-info  -->
                             </div>
                         </div><!-- /.col-md-3  -->
-                        
+
                         <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["natural"]'>
                             <div class="portfolio-item">
                                 <div class="portfolio-item-thumb">
@@ -285,13 +417,134 @@
                                 </div><!-- /.portfolio-item-thumb  -->
                                 <div class="portfolio-info">
                                     <h3>Terapia nutricional</h3>
-                                    <p>Naturista</p>
+                                    <p>Nutricion</p>
                                 </div><!-- /.portfolio-info  -->
                             </div>
                         </div><!-- /.col-md-3  -->
 
                     </div><!-- /#grid -->
                 </div>
+
+                
+                  
+                <!-- Productos -->
+                <section class="productos" id="producto">
+                    <h2 class="titulo-tratamiento">Nuestros Productos</h2><br>
+                 <!--  <div class="grid-productos">
+                        <div class="producto-card">
+                            <img class="w-full h-auto object-contain rounded-t-xl" src="assets/imgs/pro_hydro.jpg" alt="Producto 1" />
+                            <h3 class="titulo-producto">Hydrolyzed Collagen</h3>
+                            <p>Especial para pies resecos. Uso diario.</p>
+                            <ul class="beneficios-producto">
+                              <li>💧 Restaura la suavidad</li>
+                              <li>🌿 Contiene ingredientes naturales</li>
+                              <li>🦶 Reduce grietas y resequedad</li>
+                            </ul>
+                            <span class="precio">S/ 45.00</span>
+                            <a href="#" class="btn-whatsapp" target="_blank">
+                              <button class="btn-comprar">Comprar</button>
+                            </a>
+                          </div>
+                      
+                      <div class="producto-card">
+                        <img src="assets/imgs/unero1.png" alt="Producto 1" />
+                        <h3>Crema Hidratante</h3>
+                        <p>Especial para pies resecos. Uso diario.</p>
+                        <span class="precio">S/ 45.00</span>
+                        <button class="btn-comprar">Comprar</button>
+                      </div><div class="producto-card">
+                        <img src="assets/imgs/unero1.png" alt="Producto 1" />
+                        <h3>Crema Hidratante</h3>
+                        <p>Especial para pies resecos. Uso diario.</p>
+                        <span class="precio">S/ 45.00</span>
+                        <button class="btn-comprar">Comprar</button>
+                      </div><div class="producto-card">
+                        <img src="assets/imgs/unero1.png" alt="Producto 1" />
+                        <h3>Crema Hidratante</h3>
+                        <p>Especial para pies resecos. Uso diario.</p>
+                        <span class="precio">S/ 45.00</span>
+                        <button class="btn-comprar">Comprar</button>
+                      </div>
+                  
+                    </div>  -->
+
+                    <div class="filtros-productos">
+                        <button class="btn-filtro activo" data-filtro="natural">Naturales</button>
+                        <button class="btn-filtro" data-filtro="podologia">Podología</button>
+                        <button class="btn-filtro" data-filtro="nutricion">Nutrición</button>
+                      </div>
+                      
+                      <div class="contenedor-productos">
+                        <!-- Producto Naturales -->
+                        <div class="producto-card natural">
+                            <img class="w-full h-auto object-contain rounded-t-xl" src="assets/imgs/pro_hydro.jpg" alt="Producto 1" onclick="mostrarImagen(this.src)"/>
+                            <h3 class="titulo-producto">Hydrolyzed Collagen</h3>
+                            <p>Especial para pies resecos. Uso diario.</p>
+                            <ul class="beneficios-producto">
+                              <li>💧 Restaura la suavidad</li>
+                              <li>🌿 Contiene ingredientes naturales</li>
+                              <li>🦶 Reduce grietas y resequedad</li>
+                            </ul>
+                            <span class="precio">S/ 45.00</span>
+                            <a href="#" class="btn-whatsapp" target="_blank">
+                              <button class="btn-comprar">Comprar</button>
+                            </a>
+                        </div>  
+                        <div class="producto-card natural">
+                            <img class="w-full h-auto object-contain rounded-t-xl" src="assets/imgs/evo7rege.jpeg" alt="Producto 1" onclick="mostrarImagen(this.src)"/>
+                            <h3 class="titulo-producto">Hydrolyzed Collagen</h3>
+                            <p>Especial para pies resecos. Uso diario.</p>
+                            <ul class="beneficios-producto">
+                              <li>💧 Restaura la suavidad</li>
+                              <li>🌿 Contiene ingredientes naturales</li>
+                              <li>🦶 Reduce grietas y resequedad</li>
+                            </ul>
+                            <span class="precio">S/ 45.00</span>
+                            <a href="#" class="btn-whatsapp" target="_blank">
+                              <button class="btn-comprar">Comprar</button>
+                            </a>
+                        </div>  <div class="producto-card natural">
+
+                          
+                                <img class="w-full h-auto object-contain rounded-t-xl" src="assets/imgs/evo7te.jpeg" alt="Producto 1" onclick="mostrarImagen(this.src)"/>
+                             
+                            <h3 class="titulo-producto">Té Evolution 7</h3>
+                            <p>Especial para pies resecos. Uso diario.</p>
+                            <ul class="beneficios-producto">
+                              <li>💧 Restaura la suavidad</li>
+                              <li>🌿 Contiene ingredientes naturales</li>
+                              <li>🦶 Reduce grietas y resequedad</li>
+                            </ul>
+                            <span class="precio">S/ 45.00</span>
+                            <a href="#" class="btn-whatsapp" target="_blank">
+                              <button class="btn-comprar">Comprar</button>
+                            </a>
+                        </div> <div class="producto-card natural">
+                            <img class="w-full h-auto object-contain rounded-t-xl" src="assets/imgs/patch.jpeg" alt="Producto 1" onclick="mostrarImagen(this.src)"/>
+                            <h3 class="titulo-producto">Hydrolyzed Collagen</h3>
+                            <p>Especial para pies resecos. Uso diario.</p>
+                            <ul class="beneficios-producto">
+                              <li>💧 Restaura la suavidad</li>
+                              <li>🌿 Contiene ingredientes naturales</li>
+                              <li>🦶 Reduce grietas y resequedad</li>
+                            </ul>
+                            <span class="precio">S/ 45.00</span>
+                            <a href="#" class="btn-whatsapp" target="_blank">
+                              <button class="btn-comprar">Comprar</button>
+                            </a>
+                        </div> 
+                      
+                        <!-- Producto Podología -->
+                        <div class="producto-card podologia">
+                          <!-- Aquí puedes colocar otro producto de podología -->
+                        </div>
+                      
+                        <!-- Producto Nutrición -->
+                        <div class="producto-card nutricion">
+                          <!-- Aquí puedes colocar otro producto de nutrición -->
+                        </div>
+                      </div>
+                  </section>
             </div>  
     </section>
     <!-- End of portfolio section -->
@@ -306,7 +559,7 @@
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="section-headline text-center">
-            <h2>Especialistas</h2>
+            <h2 class="titulo-tratamiento">Especialistas</h2>
             <br>
           </div>
         </div>
@@ -325,12 +578,12 @@
               <div class="panel panel-default">
                 <div class="panel-heading">
                   <h4 class="check-title">
-											<a data-toggle="collapse" class="" data-parent="#accordion" href="#check1">
+											<a data-toggle="collapse"  data-parent="#accordion" href="#check1">
                                                 <span class="acc-icons"></span>¿Quiénes son?
 											</a>
 										</h4>
                 </div>
-                <div id="check1" class="panel-collapse collapse in">
+                <div id="check1" class="panel-collapse collapse">
                   <div class="panel-body">
                     <p>
                        Somos especialistas en proporcionar atención integral para la salud y bienestar de tus pies y el cuerpo en general.
@@ -360,77 +613,183 @@
                     </p>
                   </div>
                 </div>
+
+                
+
               </div>
+
+              
               <!-- End Panel Default -->
               
-              <!-- Panel Default 
+              <!-- Panel Default -->
+               
               <div class="panel panel-default">
                 <div class="panel-heading">
                   <h4 class="check-title">
 											<a data-toggle="collapse" data-parent="#accordion" href="#check3">
-                                                <span class="acc-icons"></span>¿Son profesionales?
+                                                <span class="acc-icons"></span>¿Atienden niños y adultos mayores?
 											</a>
 										</h4>
                 </div>
                 <div id="check3" class="panel-collapse collapse ">
                   <div class="panel-body">
                     <p>
-                      Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero aperiam sint nulla beatae eos.
+                        Si atendemos, nuestro equipo está capacitado para atender a pacientes de todas las edades.
+                        Brindamos atención especializada y cuidadosa tanto a niños como a personas mayores, adaptando cada tratamiento según sus necesidades particulares
                     </p>
                   </div>
                 </div>
               </div>
+
               <!-- End Panel Default -->
-              <!-- Panel Default 
+              <!-- Panel Default -->
+
               <div class="panel panel-default">
                 <div class="panel-heading">
                   <h4 class="check-title">
 											<a data-toggle="collapse" data-parent="#accordion" href="#check4">
-                                                <span class="acc-icons"></span>¿Tienen estudios?
+                                                <span class="acc-icons"></span>¿Con qué frecuencia debo hacerme una limpieza?
 											</a>
 										</h4>
                 </div>
                 <div id="check4" class="panel-collapse collapse">
                   <div class="panel-body">
                     <p>
-                      Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero aperiam sint nulla beatae eos.
+                        En general se recomienda una limpieza podológica cada 4 a 6 semanas.
+                        Esto ayuda a prevenir hongos, callos, infecciones y mantener una buena salud en los pies.
                     </p>
                   </div>
                 </div>
               </div>
               <!-- End Panel Default -->
+
+               <!-- Panel Default -->
+
+               <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="check-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#check5">
+                                                <span class="acc-icons"></span>¿Cuánto dura una sesión de podología o terapia?
+											</a>
+										</h4>
+                </div>
+                <div id="check5" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+                        La duración depende del tratamiento. Las sesiones de podología suelen durar entre 30 y 45 minutos, mientras
+                        que las terapias pueden extenderse de 45 minutos a 1 hora, según las necesidades del paciente.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Panel Default -->
+
+
+              
+
             </div>
+            
           </div>
+          
         </div>
+
+        
       </div>
+
+      <section class="estadisticas">
+        <div class="estadistica">
+          <h2 class="numero" data-numero="11" data-prefix="+">0</h2>
+          <p>🕓 Años de experiencia</p>
+        </div>
+        <div class="estadistica">
+            <h2 class="numero" data-numero="5000" data-prefix="+">0</h2>
+            <p>📈 Pacientes felices</p>
+          </div>
+        <div class="estadistica">
+          <h2 class="numero" data-numero="3">0</h2>
+          <p>👨‍⚕️ Especialistas</p>
+        </div>
+       
+      </section>
+
+     
+
+
+
+
       <!-- end Row -->
     </div>
             
     </section>
     <!-- End of Testmonial Section -->
 
+    
+
+
+
     <!-- Contact Section -->
     <section id="contacto" class="section has-img-bg pb-0">
         <div class="container">
+            <h6 class="titulo-tratamiento">Contáctanos</h6>
             <div class="row align-items-center">
-                <div class="col-md-5 my-3">
-                <h6 class="section-title text-center">Contáctanos</h6><br>
-                    <h6 class="mb-0">Telefono</h6>
-                    <a style="color:#BEBFBF" href="tel:+51995630630">995 630 630</a>
-                    <p class="mb-4"></p>
-
-                    <h6 class="mb-0">Dirección</h6>
-                    <a style="color:#BEBFBF" href=https://goo.gl/maps/7gLGKGiM2pxd51Sm7 target=”_blank”>Mz. B Lte. 13 Gpo. 3 AA.HH. Cruz de Motupe, San Juan de Lurigancho 15446, Perú</a>
-                    
-                    <p class="mb-4"></p>
-
-                    <h6 class="mb-0">Facebook</h6>
-                    <a style="color:#BEBFBF" href=https://www.facebook.com/evavargas.dulzuradelmercurio target=”_blank”>Eva Vargas Yupanqui</a>
-                </div>
-                <div class="col-md-5 my-3">
-                  <iframe id="google-container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.4641190190555!2d-76.97595638705829!3d-11.94233480286392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105dbb9dcaf76d1%3A0xcffadfad0c22c7e0!2sPodolog%C3%ADa%20Cuidando%20Tu%20Salud!5e0!3m2!1ses!2spe!4v1691787091898!5m2!1ses!2spe"></iframe>
+                <div id="estado-negocio" class="estado-card shadow-glow">
+                    <div class="icono-estado">
+                      <img id="icono-pie" src="assets/imgs/huellapie.png" alt="Icono pie" />
+                    </div>
+                    <div class="info-estado">
+                      <h2 id="estado-texto">¡Estamos Atendiendo!</h2>
+                      <p id="fecha-hora">Cargando hora...</p>
+                      <hr>
+                      <strong>🕒 Horario de atención</strong>
+                      <p>Lunes a Sábado: <strong>9:00 – 21:00</strong></p>
+                      <p>Domingo: <strong>Cerrado</strong></p>
+                    </div>
                   </div>
             </div>
+
+            <div class="contacto-mapa-container">
+            <div class="row align-items-center" >
+                <div class="col-12 col-lg-6 my-3"> <!-- en lugar de col-md-5 -->
+                    <div class="info-contacto-modern">
+                        <div class="info-box">
+                          <i class="fas fa-phone-alt"></i>
+                          <div>
+                            <h4>Teléfono</h4>
+                            <a style="color:#BEBFBF" href="tel:+51995630630">995 630 630</a>
+                          </div>
+                        </div>
+                        <div class="info-box">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <div>
+                            <h4>Dirección</h4>
+                            <a style="color:#BEBFBF" href=https://goo.gl/maps/7gLGKGiM2pxd51Sm7 target=”_blank”>Mz. B Lte. 13 Gpo. 3 AA.HH. Cruz de Motupe, San Juan de Lurigancho 15446, Perú</a>
+                          </div>
+                        </div>
+                        <div class="info-box">
+                          <i class="fab fa-facebook-f"></i>
+                          <div>
+                            <h4>Facebook</h4>
+                            <a style="color:#BEBFBF" href=https://www.facebook.com/evavargas.dulzuradelmercurio target=”_blank”>Eva Vargas Yupanqui</a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-lg-6 my-3"> <!-- en lugar de col-md-5 -->
+                  <div class="mapa-card">
+                    <h3>📍 Encuéntranos aquí</h3>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.4641190190555!2d-76.97595638705829!3d-11.94233480286392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105dbb9dcaf76d1%3A0xcffadfad0c22c7e0!2sPodolog%C3%ADa%20Cuidando%20Tu%20Salud!5e0!3m2!1ses!2spe!4v1691787091898!5m2!1ses!2spe"
+                      allowfullscreen="" 
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                  </div>
+                </div>
+            </div>
+            
+        </div>
+
+        
             <!-- Page Footer -->
             <footer class="mt-5 py-4 border-top border-secondary">
                 <p class="mb-0 small">&copy; <script>document.write(new Date().getFullYear())</script> | Eva Vargas</p>     
@@ -673,6 +1032,167 @@
             </div>
         </div>
     </div>
+
+    <div id="portfolioItem11" class="modal fade fade-scale" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                    <img class="img-res" src="assets/imgs/pieatleta.png" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Callos</h4>
+                    <p>Son un exceso de crecimiento de la capa córnea,
+                    que es la capa más externa de la piel- debido a una fricción o sobrecarga continua. Como consecuencia aparece una
+                    hiperqueratosis (fragmento de piel dura y engrosada) que llega a ser muy dolorosa cuando existe un núcleo que coincide
+                    con la zona de presión.</p>
+                    <p>Algunos sintomas son:</p>
+                    	<ul>
+                    		<li><p>Se encuentran áreas de piel gruesa y endurecida en las manos, los pies u otras zonas que pueden sufrir fricción o presión</p></li>	
+                    		<li><p>La piel puede ser escamosa y estar seca</p></li>
+                    		<li><p>La piel está endurecida y es gruesa</p></li>
+                    	</ul>
+                </div>
+               
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    
+    <div id="portfolioItem12" class="modal fade fade-scale" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                    <img class="img-res" src="assets/imgs/hongopie.png" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Callos</h4>
+                    <p>Son un exceso de crecimiento de la capa córnea,
+                    que es la capa más externa de la piel- debido a una fricción o sobrecarga continua. Como consecuencia aparece una
+                    hiperqueratosis (fragmento de piel dura y engrosada) que llega a ser muy dolorosa cuando existe un núcleo que coincide
+                    con la zona de presión.</p>
+                    <p>Algunos sintomas son:</p>
+                    	<ul>
+                    		<li><p>Se encuentran áreas de piel gruesa y endurecida en las manos, los pies u otras zonas que pueden sufrir fricción o presión</p></li>	
+                    		<li><p>La piel puede ser escamosa y estar seca</p></li>
+                    		<li><p>La piel está endurecida y es gruesa</p></li>
+                    	</ul>
+                </div>
+               
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem13" class="modal fade fade-scale" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                    <img class="img-res" src="assets/imgs/pieplano.png" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Callos</h4>
+                    <p>Son un exceso de crecimiento de la capa córnea,
+                    que es la capa más externa de la piel- debido a una fricción o sobrecarga continua. Como consecuencia aparece una
+                    hiperqueratosis (fragmento de piel dura y engrosada) que llega a ser muy dolorosa cuando existe un núcleo que coincide
+                    con la zona de presión.</p>
+                    <p>Algunos sintomas son:</p>
+                    	<ul>
+                    		<li><p>Se encuentran áreas de piel gruesa y endurecida en las manos, los pies u otras zonas que pueden sufrir fricción o presión</p></li>	
+                    		<li><p>La piel puede ser escamosa y estar seca</p></li>
+                    		<li><p>La piel está endurecida y es gruesa</p></li>
+                    	</ul>
+                </div>
+               
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="portfolioItem14" class="modal fade fade-scale" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                    <img class="img-res" src="assets/imgs/piegarra.png" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Callos</h4>
+                    <p>Son un exceso de crecimiento de la capa córnea,
+                    que es la capa más externa de la piel- debido a una fricción o sobrecarga continua. Como consecuencia aparece una
+                    hiperqueratosis (fragmento de piel dura y engrosada) que llega a ser muy dolorosa cuando existe un núcleo que coincide
+                    con la zona de presión.</p>
+                    <p>Algunos sintomas son:</p>
+                    	<ul>
+                    		<li><p>Se encuentran áreas de piel gruesa y endurecida en las manos, los pies u otras zonas que pueden sufrir fricción o presión</p></li>	
+                    		<li><p>La piel puede ser escamosa y estar seca</p></li>
+                    		<li><p>La piel está endurecida y es gruesa</p></li>
+                    	</ul>
+                </div>
+               
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div id="portfolioItem15" class="modal fade fade-scale" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                    <img class="img-res" src="assets/imgs/masoterapia.png" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Callos</h4>
+                    <p>Son un exceso de crecimiento de la capa córnea,
+                    que es la capa más externa de la piel- debido a una fricción o sobrecarga continua. Como consecuencia aparece una
+                    hiperqueratosis (fragmento de piel dura y engrosada) que llega a ser muy dolorosa cuando existe un núcleo que coincide
+                    con la zona de presión.</p>
+                    <p>Algunos sintomas son:</p>
+                    	<ul>
+                    		<li><p>Se encuentran áreas de piel gruesa y endurecida en las manos, los pies u otras zonas que pueden sufrir fricción o presión</p></li>	
+                    		<li><p>La piel puede ser escamosa y estar seca</p></li>
+                    		<li><p>La piel está endurecida y es gruesa</p></li>
+                    	</ul>
+                </div>
+               
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <div id="portfolioItem16" class="modal fade fade-scale" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                    <img class="img-res" src="assets/imgs/electroterapia.png" alt="">
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Callos</h4>
+                    <p>Son un exceso de crecimiento de la capa córnea,
+                    que es la capa más externa de la piel- debido a una fricción o sobrecarga continua. Como consecuencia aparece una
+                    hiperqueratosis (fragmento de piel dura y engrosada) que llega a ser muy dolorosa cuando existe un núcleo que coincide
+                    con la zona de presión.</p>
+                    <p>Algunos sintomas son:</p>
+                    	<ul>
+                    		<li><p>Se encuentran áreas de piel gruesa y endurecida en las manos, los pies u otras zonas que pueden sufrir fricción o presión</p></li>	
+                    		<li><p>La piel puede ser escamosa y estar seca</p></li>
+                    		<li><p>La piel está endurecida y es gruesa</p></li>
+                    	</ul>
+                </div>
+               
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+
+
+
+
+
+
+
+
+
+
     
     <!-- whatsapp -->
     <a href="https://api.whatsapp.com/send?phone=51995630630&text=Hola, quisiera mas información" target=”_blank” class="whatsapp-btn">
@@ -710,6 +1230,142 @@
 
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
+   
+   
+
+    <!-- Script del card de horario de atencion-->    
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          function actualizarEstadoNegocio() {
+            const now = new Date();
+            const dia = now.getDay();
+            const hora = now.getHours();
+            const minutos = now.getMinutes();
+      
+            const fechaHora = now.toLocaleDateString('es-PE', {
+              weekday: 'long', hour: '2-digit', minute: '2-digit', hour12: false
+            });
+      
+            const estaAbierto = (dia >= 1 && dia <= 6) && (hora >= 9 && hora < 21);
+
+      
+            document.getElementById("estado-texto").textContent = estaAbierto
+              ? "¡Estamos Abiertos!"
+              : "Cerrado por el momento";
+      
+            document.getElementById("fecha-hora").textContent =
+              fechaHora.charAt(0).toUpperCase() + fechaHora.slice(1);
+      
+            document.getElementById("estado-negocio").style.background = estaAbierto
+              ? "linear-gradient(135deg, #1b4033, #2e6e5e)"
+              : "linear-gradient(135deg, #5a1f1f, #902c2c)";
+      
+            document.getElementById("icono-pie").style.backgroundColor = estaAbierto
+              ? "#28a745"
+              : "#c82333";
+          }
+      
+          actualizarEstadoNegocio();
+          setInterval(actualizarEstadoNegocio, 30000);
+        });
+      </script>
     
+
+    <script>
+        const animarNumeros = () => {
+          document.querySelectorAll('.numero').forEach(el => {
+            const final = +el.dataset.numero;
+            const prefix = el.dataset.prefix || "";
+            let actual = 0;
+      
+            const aumentar = () => {
+              actual += Math.ceil(final / 50);
+              if (actual < final) {
+                el.textContent = prefix + actual;
+                requestAnimationFrame(aumentar);
+              } else {
+                el.textContent = prefix + final;
+              }
+            };
+      
+            aumentar();
+          });
+        };
+      
+        window.addEventListener('load', animarNumeros);
+      </script>
+
+
+        <!-- Script de boton de comprar -->
+    <script>
+        document.querySelectorAll('.btn-whatsapp').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+        e.preventDefault();
+  
+        const card = this.closest('.producto-card');
+        const titulo = card.querySelector('.titulo-producto').textContent.trim();
+        const mensaje = `Hola, quiero comprar el producto: ${titulo}, me podria dar mas información`;
+        const numero = "51995630630";
+        const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+  
+        window.open(url, '_blank');
+      });
+    });
+    </script>
+
+
+    <!-- Script filtrado productos -->
+    <script>
+        const botonesFiltro = document.querySelectorAll('.btn-filtro');
+        const productos = document.querySelectorAll('.producto-card');
+  
+        botonesFiltro.forEach(boton => {
+        boton.addEventListener('click', () => {
+        botonesFiltro.forEach(b => b.classList.remove('activo'));
+        boton.classList.add('activo');
+  
+        const filtro = boton.getAttribute('data-filtro');
+  
+        productos.forEach(producto => {
+          if (producto.classList.contains(filtro)) {
+            producto.style.display = 'block';
+          } else {
+            producto.style.display = 'none';
+          }
+        });
+      });
+    });
+  
+    // Activar automáticamente "Podología" al cargar
+    window.addEventListener('DOMContentLoaded', () => {
+      const botonInicial = document.querySelector('.btn-filtro[data-filtro="natural"]');
+      if (botonInicial) {
+        botonInicial.click(); // Simula un clic en "Podología"
+      }
+    });
+    </script>
+    
+
+    <!-- Script mostrar imagen de producto -->    
+     <script>
+        function mostrarImagen(src) {
+          const modal = document.getElementById("modal");
+          const modalImg = document.getElementById("modal-img");
+          modal.style.display = "flex";
+          modalImg.src = src;
+        }
+      
+        function cerrarModal() {
+          document.getElementById("modal").style.display = "none";
+        }
+      </script>
+      
+
+        <div id="modal" class="modal" onclick="cerrarModal()">
+            <span class="cerrar">&times;</span>
+            <img id="modal-img" class="modal-contenido" />
+        </div>
+
+
 </body>
 </html>

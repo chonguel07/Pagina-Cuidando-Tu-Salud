@@ -1,3 +1,475 @@
+.info-contacto-modern {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+
+  align-items: center;  /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente si hay altura fija */
+  text-align: center;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;  /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente si hay altura fija */
+  gap: 15px;
+  background: rgba(255,255,255,0.03);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.info-box i {
+  font-size: 24px;
+  color: #32b39c;
+  margin-top: 6px;
+}
+
+.info-box h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.info-box p {
+  margin: 4px 0 0;
+  font-size: 15px;
+}
+.contacto-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+
+
+
+
+.estado-card {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #1b4033, #2e6e5e);
+  color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 18px;
+  max-width: 600px;
+  margin: 50px auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  animation: slideFadeIn 1s ease;
+  gap: 20px;
+}
+
+.icono-estado {
+  font-size: 60px;
+  animation: pulse 3s infinite;
+}
+
+.info-estado {
+  flex: 1;
+}
+
+.estado-card h2 {
+  font-size: 26px;
+  margin: 0 0 5px;
+}
+
+.estado-card p {
+  font-size: 16px;
+  margin: 3px 0;
+}
+
+.estado-card hr {
+  border: 0;
+  border-top: 1px solid #ffffff33;
+  margin: 10px 0;
+}
+
+.shadow-glow {
+  box-shadow: 0 0 20px rgba(32, 173, 142, 0.4);
+  transition: box-shadow 0.5s;
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+.icono-estado img {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.5s ease;
+  background-color: #28a745; /* Verde por defecto */
+}
+
+.info-contacto-modern,
+.mapa-card {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+  .info-contacto-modern,
+  .mapa-card {
+    max-width: 500px; /* Puedes subir a 550px si deseas */
+  }
+
+  .contacto-mapa-container .row {
+    justify-content: center;
+  }
+}
+
+
+.mapa-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  max-width: 420px;
+  width: 100%; /* ← Esto hace que se ajuste automáticamente */
+  margin: 40px auto;
+  color: white;
+  text-align: center;
+  animation: slideFadeIn 0.8s ease;
+
+  
+}
+
+.mapa-card h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.mapa-card iframe {
+  border: none;
+  border-radius: 14px;
+  width: 100%;
+  height: 300px;
+  transition: transform 0.3s ease;
+}
+
+.mapa-card iframe:hover {
+  transform: scale(1.01);
+}
+
+
+.estadisticas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.05); /* transparente */
+  padding: 60px 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 1000px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.estadistica {
+  flex: 1 1 220px;
+  margin: 20px;
+  color: #ffffff;
+}
+
+.estadistica h2 {
+  font-size: 3rem;
+  color: #1edb91;
+  margin-bottom: 8px;
+}
+
+.estadistica p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #e2e2e2;
+}
+
+
+
+.filtros-productos {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-filtro {
+  background: none;
+  border: 2px solid #00ffae;
+  color: white;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-filtro:hover,
+.btn-filtro.activo {
+  background-color: #00ffae;
+  color: #000;
+}
+
+.contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.producto-card {
+  background: #1f1f1f;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  transition: transform 0.3s;
+}
+
+.producto-card:hover {
+  transform: translateY(-5px);
+}
+
+.producto-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* o 16 / 9 según lo que se vea mejor */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.producto-card h4 {
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.producto-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.precio {
+  font-size: 1.1rem;
+  color: #00ffae;
+  margin-top: 10px;
+}
+
+.boton-comprar {
+  background-color: #00ffae;
+  border: none;
+  padding: 10px 25px;
+  margin-top: 10px;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton-comprar:hover {
+  background-color: #00e69a;
+}
+
+.productos {
+  padding: 50px 20px;
+  text-align: center;
+  background: transparent;
+  scroll-margin-top: 80px; /* o el alto de tu navbar */
+  padding: 7rem 1rem; /* arriba-abajo, lados */
+}
+
+.titulo-seccion {
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.producto-card {
+  background: rgba(255, 255, 255, 0.08); /* transparencia */
+  backdrop-filter: blur(10px); /* efecto glass */
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.producto-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.producto-card h3 {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.producto-card p {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.precio {
+  display: block;
+  margin: 12px 0;
+  font-weight: bold;
+  color: #00ffae;
+  font-size: 18px;
+}
+
+.btn-comprar {
+  padding: 10px 20px;
+  background: #00ffae;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-comprar:hover {
+  background: #00c18d;
+}
+
+
+.contacto-mapa-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  gap: 2rem;
+  text-align: center; /* Centra el texto */
+  padding: 2rem 1rem;
+}
+
+.beneficios-producto {
+  list-style: none;
+  padding: 0;
+  color: #a5f3fc;
+  text-align: left;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  text-align: center; /* <-- Esta línea centra el texto */
+}
+
+
+.product-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.modal-contenido {
+  max-width: 90%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 10px;
+  animation: zoom 0.3s ease-in-out;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* whatsapp boton
 ================================================== */
@@ -443,7 +915,7 @@ iframe {
   padding-bottom: 8px;
 
   margin: 0 auto; /* Centra el contenedor */
-  max-width: 80%; /* Hace que no ocupe el 100% del ancho */
+  max-width: 75vw; /* Hace que no ocupe el 100% del ancho */
 
   white-space: nowrap;  /* No permite saltos de línea */
 
@@ -790,6 +1262,13 @@ iframe {
   padding: 0;
   border-radius: 0;
   border: 0;
+
+  background-color: #1e1e1e; /* fondo oscuro similar al de tu sitio */
+  color: #f0f0f0; /* texto claro para contraste */
+  border-radius: 1rem; /* bordes suaves */
+  box-shadow: 0 0 20px rgba(0, 255, 128, 0.2); /* un toque de color como el botón WhatsApp */
+  padding: 2rem;
+
 }
 
 .modal-content p {
